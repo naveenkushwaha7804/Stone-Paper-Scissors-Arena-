@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rock Paper Scissors</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="board">
+  <h1>Rock, Paper, Scissors</h1>
+  <p class="tagline">Best of endless — pick your move</p>
+
+  <div class="scoreboard">
+    <div class="score-item win">
+      <span class="score-num" id="winCount">0</span>
+      <span class="score-label">You</span>
+    </div>
+    <div class="score-item">
+      <span class="score-num" id="tieCount">0</span>
+      <span class="score-label">Ties</span>
+    </div>
+    <div class="score-item lose">
+      <span class="score-num" id="loseCount">0</span>
+      <span class="score-label">CPU</span>
+    </div>
+  </div>
+
+  <div class="arena">
+    <div class="slot">
+      <div class="slot-icon" id="playerIcon"><span class="slot-emoji" id="playerEmoji">❔</span></div>
+      <span class="slot-label">You</span>
+    </div>
+    <span class="vs">VS</span>
+    <div class="slot">
+      <div class="slot-icon" id="cpuIcon"><span class="slot-emoji" id="cpuEmoji">❔</span></div>
+      <span class="slot-label">CPU</span>
+    </div>
+  </div>
+
+  <p class="result" id="result">Make your move</p>
+
+  <div class="choices">
+    <button class="choice-btn" data-choice="rock" aria-label="Rock">
+      ✊<span class="choice-name">Rock</span>
+    </button>
+    <button class="choice-btn" data-choice="paper" aria-label="Paper">
+      ✋<span class="choice-name">Paper</span>
+    </button>
+    <button class="choice-btn" data-choice="scissors" aria-label="Scissors">
+      ✌️<span class="choice-name">Scissors</span>
+    </button>
+  </div>
+
+  <button class="reset" id="resetBtn">Reset score</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
